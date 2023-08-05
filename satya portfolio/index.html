@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webon portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/994f83b088.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+       <div class="container">
+        <nav>            <ul>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href=" #project">PROJECTS</a></li>
+                <li><a href="#Skills">SKILLS</a></li>
+                <li><a href="#reachus">REACH US</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+             <span>
+            <h1><span>D.Rajeswari</span></h1> 
+            <h1><span>CH.Ramu</span></h1> 
+                </span>
+        </div>
+       </div> 
+    </div>
+    <!-----------aboutus--------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="download.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">ABOUT US</h1>
+                    <p>this is our first portfolio website ,which we are designed together
+                        the portfolio is about our group information and how we create it 
+                    it contains about our individual information.  </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">SKILLS</p>
+                        <p class="tab-links" onclick="opentab('experience')">EXPERIENCE</p>
+                        <p class="tab-links" onclick="opentab('education')">EDUCATION</p>
+                    </div> 
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>chemistry</span><br>chemistry</li>
+                            <li><span>botany</span><br>botany</li>
+                            <li><span>zoology</span><br>zoology</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021-2022</span><br>learned chemistry,botany,zoology</li>
+                            <li><span>2022-2023</span><br>learned chemistry,botany,zoology</li>
+                            <li><span>2023 </span><br>INTERNSHIP AT SMART BRIDGE</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Intermediate</span><br>SRI VIVEKANANDA Jr COLLEGE</li>
+                            <li><span>Bsc chemistry</span><br>A M A L COLLEGE</li>
+                        </ul>
+                    </div>
+                </div>
+         </div>
+        </div>
+    </div>
+    <!-------------projects-------------->
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title">OUR PROJECT</h1> 
+            <div class="projects">
+             <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>personal portfolio</h2>
+                <p>This is our first portfolio designed by our group,
+                    which contain the information about our team.
+                </p>
+                <a href="#">Learn more</a>
+             </div>
+            </div>
+        </div>
+    </div>
+    <!---------------skills---------------->
+    <div id="Skills">
+        <div class="container">
+            <h1 class="sub-title">Skills</h1> 
+            <div class="skills-list">
+                <div class="skills" >
+                    <div class="layer">
+                     <p><img src="skill-1.jpg">
+                        <br>chemistry</p>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="layer">
+                        <p><img src="skill-2.jpg">
+                            <br>botany</p>
+              
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="layer">
+                 <P><img src="skill-3.jpg"><br>zoology </P>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------reach us------------>
+    <div id="reachus">
+        <div class="container">
+            <div class="row">
+                <div class="contact-center">
+                    <h1 class="sub-title">Reach us</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>team@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>0123456789</p>
+                    <div class="social-icons">
+                        <a href="http://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="http://instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="http://telegram.com"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="http://linked.in.com"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
